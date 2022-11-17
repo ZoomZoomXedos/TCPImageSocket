@@ -74,7 +74,7 @@ void Widget::on_disconnect_tcpserv()
 
 void Widget::on_send_file()
 {
-    QString filter="Image File (*.png, *.jpg, *.bmp)";
+    QString filter="Image File (*.png, *.jpg)";
     QString filepath = QFileDialog::getOpenFileName(this, "Send file", tr(""),filter);
     if (filepath.isEmpty())
         return;
