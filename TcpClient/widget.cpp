@@ -22,7 +22,7 @@ Widget::~Widget()
 
 void Widget::setupUi()
 {
-    /************ widget ****************/
+
     _IP = new QLabel("IP", this);
     _IPEdit = new QLineEdit("127.0.0.1", this);
     _Port = new QLabel("Port", this);
@@ -41,7 +41,6 @@ void Widget::setupUi()
     text += QString("<font color=red>%1</font>").arg(tr("wait"));
     _NetworkStatus->setText(text);
 
-    /************ layout ****************/
     QHBoxLayout* topLayout = new QHBoxLayout;
     topLayout->addWidget(_IP);
     topLayout->addWidget(_IPEdit);
